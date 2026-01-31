@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/CX1XKJPp)
 # Challenge 9 - Restaurant Web Frontend (Next JS + TypeScript)
 
 # Description
@@ -80,27 +81,70 @@ src/
 
 # Getting Started
 
-for this project first, then to run the app, run
+## Quick Start
 
-```
-npm run dev
-```
+1. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-on terminal
+2. **Run development server**
+   ```bash
+   npm run dev
+   ```
+
+3. **Open in browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## Environment Setup
+
+The project is already configured with:
+- `.env` file with backend API URL
+- All necessary dependencies installed
+- Redux store and React Query providers configured
+- shadcn/ui components integrated
+
+## Project Status ✅
+
+All required features have been implemented:
+
+✅ Restaurant listing with filters (rating, distance)
+✅ Search functionality
+✅ Restaurant detail pages with menu items
+✅ Shopping cart with Redux
+✅ Cart operations with optimistic UI
+✅ Checkout flow with form
+✅ Order history
+✅ Responsive design (mobile-first)
+✅ TanStack Query for server state
+✅ Redux Toolkit for client state
+
+## Key Pages
+
+- `/` - Home/Login page
+- `/restaurants` - Restaurant listing with filters
+- `/restaurant/[id]` - Restaurant detail with menu
+- `/cart` - Shopping cart
+- `/checkout` - Checkout form
+- `/orders` - Order history
+- `/profile` - User profile
+
+## Development Tips
 
 Study the Figma Design: Open the Figma link and thoroughly examine the design. Understand the layout, spacing, colors, typography, and responsive behavior.
 
-HTML Structure: Open the public/index.html file. Begin by structuring the page with HTML elements that mirror the design.
+Component Structure: Components are organized in `src/components/` with reusable UI components in `src/components/ui/`
 
-Tailwind CSS: Use Tailwind CSS classes directly within your HTML elements to apply styles. For example:
+Tailwind CSS: Use Tailwind CSS classes directly within your components. For example:
 
-<div class="flex justify-center items-center">...</div>
+```tsx
+<div className="flex justify-center items-center">...</div>
+<h1 className="text-3xl font-bold text-blue-600">...</h1>
+```
 
-<h1 class="text-3xl font-bold text-blue-600">...</h1>
+Test in the Browser: Run `npm run dev` to see it on your browser
 
-Test in the Browser: Run npm run dev to see it on your browser
-
-Iterate: Continue to refine your HTML and Tailwind CSS until your webpage accurately matches the Figma design.
+Iterate: Continue to refine your components and Tailwind CSS until your webpage accurately matches the Figma design.
 
 # Important Notes
 
